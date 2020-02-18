@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Start Appointment</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+	<script src="chart/jquery-2.1.4.min.js"></script>
+		<script src="chart/Chart.js"></script>
+	
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- css for the card view-->
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><font face="Comic Sans MS">naadi</font></a>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+		
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+				<br>
+				<li><center><img src="img/a.png" alt="User Avatar" class="img-circle"><br>
+				<font color="#30a5ff">Dr.Ravi Sharma</font></center>
+				</li>
+				<li role="presentation" class="divider"></li>
+				<li><a href="dashboard.html"><svg class="glyph stroked desktop"><use xlink:href="#stroked-desktop"/></svg>Dashboard</a></li>
+				<li><a href="appointments.html"> <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg>Appointments</a></li>
+				<li class="active"><a href="record.html"> <svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Patient Records </a></li>
+				<li><a href="myslot.html"> <svg class="glyph stroked clock"><use xlink:href="#stroked-clock"/></svg>My Slot</a></li>
+				<li><a href="account.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg>My Account</a></li>
+				<li><a href="login.html"><svg class="glyph stroked download"><use xlink:href="#stroked-download"/></svg>Log Out</a></li>
+			    <li role="presentation" class="divider"></li>
+				
+		</ul>
+
+	</div><!--/.sidebar-->
+	
+<!-- Main content -->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-3 main">			
+	
+	<div class="col-lg-9">
+	<div class="panel panel-default">
+	<div class="panel-body">
+	
+	
+	 <div class="row" style="background-color:#ffffff;padding-top:10px;padding-bottom:0px;margin-top:10px">
+				 <div class="col-lg-12">
+				 
+				 <div class="col-lg-7 col-md-4" style="margin-top:0px">
+				 
+				 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+				 
+				 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+				 
+				 </div>
+				 
+				 
+				 <div class="col-lg-5 col-md-4" style="margin-top:0px">
+				 
+				 <button class="btn btn-primary" style="float:right" data-toggle="modal" data-target="#endappointment"> End Appointment </button>
+				 
+				 </div>
+				 
+				 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+	<hr>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" style="text-align:center">
+		 <thead>
+			<tr style="background-color:#009cff;color:#ffffff">
+				<th colspan="3">&nbsp;&nbsp;<i class="fa fa-file-text fa-1x">&nbsp;&nbsp;&nbsp;Prescriptions</i></th>
+			</tr>
+		 </thead>
+		 <tbody>
+		 <tr>
+		 <td> 13-10-2016 </td>
+		 <td> prescription name </td>
+		 <td><button class="btn btn-primary">view</button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> prescription name </td>
+		 <td><button class="btn btn-primary">view</button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> prescription name </td>
+		 <td><button class="btn btn-primary">view</button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> prescription name </td>
+		 <td><button class="btn btn-primary">view</button></td>
+		 </tr>
+		 </tbody>
+		
+		</table>
+	</div>
+	
+	<hr>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" style="text-align:center">
+		 <thead>
+			<tr style="background-color:#009cff;color:#ffffff">
+				<th colspan="3"> &nbsp;&nbsp;<i class="fa fa-folder-open fa-1x">&nbsp;&nbsp;&nbsp;Documents</i></th>
+			</tr>
+		 </thead>
+		 <tbody>
+		 <tr>
+		 <td> 13-10-2016 </td>
+		 <td> EEG Report </td>
+		 <td><button class="btn btn-primary"><span class="glyphicon glyphicon-download"></span></button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> ECG Report </td>
+		 <td><button class="btn btn-primary"><span class="glyphicon glyphicon-download"></span></button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> Blood Group Report </td>
+		 <td><button class="btn btn-primary"><span class="glyphicon glyphicon-download"></span></button></td>
+		 </tr>
+		  <tr>
+		 <td> 13-10-2016 </td>
+		 <td> EEG report </td>
+		 <td><button class="btn btn-primary"><span class="glyphicon glyphicon-download"></span></button></td>
+		 </tr>
+		 </tbody>
+		
+		</table>
+	</div>
+	
+	
+		
+	
+	
+	</div>
+	
+	</div>
+	</div>
+
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+
+
+
+<div id="endappointment" class="modal fade" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header" style="background-color:#009cff">
+						<button type="button" class="close" data-dismiss="modal" style="color:#000000">&times;</button>
+						<h4 class="modal-title" style="text-align:center;color:#ffffff"><font face="Comic Sans MS">Appointment : APISAM2016011</font></h4>
+					  </div>
+					  <div class="modal-body">
+									<br><br>
+									<div class="container-fluid" style="padding-left:70px;padding-right:70px">
+									<center>
+									<font face="Comic Sans MS" size="5px" color="#009cff"> Appointment is Ended Successfully .</font>
+									</center>
+									
+									</diV>
+					
+					<br><br>
+					  </div>
+					  <div class="modal-footer" style="background-color:#ffffff">
+					  <a href="dashboard.html">
+					  <button type="button" class="btn btn-primary">Close</button>
+					  </a>
+					  </div>
+					  
+					</div>
+
+				  </div>	<!-- modal dialoge end -->
+				</div>	<!-- modal div end -->
+
+</body>
+
+</html>

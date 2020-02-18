@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+				<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Dashboard</title>
+				
+				<link href="css/bootstrap.min.css" rel="stylesheet">
+				<link href="css/datepicker3.css" rel="stylesheet">
+				<link href="css/styles.css" rel="stylesheet">
+				<!--Icons-->
+				<script src="js/lumino.glyphs.js"></script>
+				<script src="chart/jquery-2.1.4.min.js"></script>
+				<script src="chart/Chart.js"></script>
+				<!--[if lt IE 9]>
+				<script src="js/html5shiv.js"></script>
+				<script src="js/respond.min.js"></script>
+				<![endif]-->
+				<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+				<!-- css for the card view-->
+				<link href="css/animate.css" rel="stylesheet">
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+				</head>
+
+	
+	
+	<body>
+	
+	
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#"><font face="Comic Sans MS">naadi</font></a>
+							</div>
+						</div><!-- /.container-fluid -->
+				</nav> 
+				
+		
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+					<ul class="nav menu">
+							
+							<br>
+							
+							<li><center><img src="img/a.png" alt="User Avatar" class="img-circle"><br>
+							<font color="#30a5ff">Dr.Ravi Sharma</font></center>
+							</li>
+							
+							<li role="presentation" class="divider"></li>
+							
+							<li class="active"><a href="dashboard.html"><svg class="glyph stroked desktop"><use xlink:href="#stroked-desktop"/></svg>Dashboard</a></li>
+							<li><a href="appointments.html"> <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg>Appointments</a></li>
+							<li><a href="record.html"> <svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Patient Records </a></li>
+							<li><a href="myslot.html"> <svg class="glyph stroked clock"><use xlink:href="#stroked-clock"/></svg>My Slot</a></li>
+							<li><a href="account.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg>My Account</a></li>
+							<li><a href="login.html"><svg class="glyph stroked download"><use xlink:href="#stroked-download"/></svg>Log Out</a></li>
+							
+							<li role="presentation" class="divider"></li>
+							
+					</ul>
+
+	</div><!--/.sidebar-->
+
+		
+	<!-- Main content -->
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-3 main">			
+	
+
+	<div class="col-lg-9">
+	
+		<!-- Pie chart to show Appointment Details and Slot Details -->
+						
+		<div class="row" style="margin-top:5px">
+		
+		
+							<div class="col-md-6 animated finite fadeInDown">
+							 <div class="panel panel-default" style="border-top-left-radius:30px;border-bottom-right-radius:30px">
+									 <div class="panel-heading"  style="text-align:center;background-color:#009cff;color:white;border-top-left-radius:30px">
+									<font face="Comic Sans MS"> Appointments </font>
+									 </div>
+									<br>
+									<center><canvas id="mycanvas0" width="180" height="180"></center>
+									<br><br><br>
+								<script>
+								$(document).ready(function(){
+									var ctx = $("#mycanvas0").get(0).getContext("2d");
+
+									//pie chart data
+									//sum of values = 360
+									var data = [
+										{
+											value: 280,
+											color: "lightskyblue",
+											highlight: "#009cff",
+											label: "Upcoming"
+										},
+										
+										{
+											value: 80,
+											color: "lightgray",
+											highlight: "gray",
+											label: "Completed"
+										}
+									];
+
+									//draw
+									var piechart = new Chart(ctx).Pie(data);
+								});
+							</script>
+									
+									</div>
+							</div>
+							
+							
+							
+							
+							<div class="col-md-6">
+							 <div class="panel panel-default" style="border-top-right-radius:30px;border-bottom-left-radius:30px">
+									 <div class="panel-heading"  style="text-align:center;background-color:#009cff;color:white ;border-top-right-radius:30px">
+									<font face="Comic Sans MS"> Slots </font>
+									 </div>
+									<br>
+									<center><canvas id="mycanvas3" width="180" height="180"></center>
+									<br>
+									<br><br>
+								
+							<script>
+								$(document).ready(function(){
+									var ctx = $("#mycanvas3").get(0).getContext("2d");
+
+									//pie chart data
+									//sum of values = 360
+									var data = [
+										{
+											value: 120,
+											color: "lightgreen",
+											highlight: "green",
+											label: "Booked Slots"
+										},
+										
+										{
+											value: 240,
+											color: "lightgray",
+											highlight: "gray",
+											label: "Available Slots"
+										}
+									];
+
+									//draw
+									var piechart = new Chart(ctx).Pie(data);
+								});
+									</script>
+									
+									</div>
+							</div>
+							
+							
+							
+		</div> <!--end of row-->
+
+		
+		<!--  Todays Appointment -->
+		<div class="panel panel-default" style="background-color:#f5f5f5">	
+		
+			<div class="panel-heading" style="text-align:left;background-color:#009cff;color:white">
+				 <font face="Comic Sans MS">Todays Appointments</font>
+            </div>
+			
+			<div class="panel-body">
+			
+				  <div class="row" style="background-color:#ffffff;padding-bottom:40px;padding-top:30px;margin-top:-15px">
+						  <div class="col-lg-10">
+						  <input class="form-control" type="text" placeholder="serch here ..." style="margin-top:5px">
+						  </div>
+						  <div class="col-lg-2">
+						  <button class="btn btn-primary" style="margin-top:5px">search</button>
+						  </div>
+				  </div>
+				  
+				 <div class="row wow fadeInDown" style="background-color:#ffffff;padding-top:10px;padding-bottom:40px;margin-top:3px">
+						 <div class="col-lg-12">
+						 <div class="col-lg-2 col-md-3 col-sm-4" style="margin-top:20px">
+						 <img src="img/a.png" width="100%" height="100%"></img>
+						 </div>
+						 <div class="col-lg-7 col-md-4" style="margin-top:20px">
+						 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i> 
+						 <a href="show_details.html">
+						 API2016SAM001 </a></div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+						 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+						 </div>
+						 <div class="col-lg-3 col-md-4 col-sm-4" style="margin-top:20px">
+						 <a href="Start_appointment.html">
+						 <button class="btn btn-primary">Start Appointment</button>
+						 </a>
+						 </div>
+						 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+					
+				 <div class="row" style="background-color:#ffffff;padding-top:20px;padding-bottom:40px;margin-top:3px">
+						 <div class="col-lg-12">
+						 <div class="col-lg-2" style="margin-top:20px">
+						 <img src="img/a.png" width="100%" height="100%"></img>
+						 </div>
+						 <div class="col-lg-7" style="margin-top:20px">
+						 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+						 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+						 </div>
+						 <div class="col-lg-3" style="margin-top:20px">
+						 <button class="btn btn-primary">Start Appointment</button>
+						 </div>
+						 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+
+				 <div class="row" style="background-color:#ffffff;padding-top:20px;padding-bottom:40px;margin-top:3px">
+						 <div class="col-lg-12">
+						 <div class="col-lg-2" style="margin-top:20px">
+						 <img src="img/a.png" width="100%" height="100%"></img>
+						 </div>
+						 <div class="col-lg-7" style="margin-top:20px">
+						 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+						 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+						 </div>
+						 <div class="col-lg-3" style="margin-top:20px">
+						 <button class="btn btn-primary">Start Appointment</button>
+						 </div>
+						 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+				 
+				 <div class="row" style="background-color:#ffffff;padding-top:20px;padding-bottom:40px;margin-top:3px">
+						 <div class="col-lg-12">
+						 <div class="col-lg-2" style="margin-top:20px">
+						 <img src="img/a.png" width="100%" height="100%"></img>
+						 </div>
+						 <div class="col-lg-7" style="margin-top:20px">
+						 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+						 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+						 </div>
+						 <div class="col-lg-3" style="margin-top:20px">
+						 <button class="btn btn-primary">Start Appointment</button>
+						 </div>
+						 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+				 
+				 <div class="row" style="background-color:#ffffff;padding-top:20px;padding-bottom:40px;margin-top:3px">
+						 <div class="col-lg-12">
+						 <div class="col-lg-2" style="margin-top:20px">
+						 <img src="img/a.png" width="100%" height="100%"></img>
+						 </div>
+						 <div class="col-lg-7" style="margin-top:20px">
+						 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+						 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+						 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+						 </div>
+						 <div class="col-lg-3" style="margin-top:20px">
+						 
+						 <button class="btn btn-primary">Start Appointment</button>
+						 </div>
+						 </div>	<!-- end of col -->
+				 </div> <!-- end of row -->
+				 
+				 
+			</div> <!-- panel body end -->
+		 
+				 
+		</div><!--panel end-->
+		
+		
+	</div><!--col end-->
+
+	
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+</body>
+
+</html>

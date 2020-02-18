@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+
+		<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Appointments</title>
+				<link href="css/bootstrap.min.css" rel="stylesheet">
+				<link href="css/datepicker3.css" rel="stylesheet">
+				<link href="css/styles.css" rel="stylesheet">
+				<!--Icons-->
+				<script src="js/lumino.glyphs.js"></script>
+				<script src="chart/jquery-2.1.4.min.js"></script>
+				<script src="chart/Chart.js"></script>
+				<!--[if lt IE 9]>
+				<script src="js/html5shiv.js"></script>
+				<script src="js/respond.min.js"></script>
+				<![endif]-->
+				<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+				<!-- css for the card view-->
+		</head>
+
+		
+		
+		
+<body>
+
+
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><font face="Comic Sans MS">naadi</font></a>
+						</div>				
+					</div><!-- /.container-fluid -->
+				</nav>
+		
+		
+		
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+				<br>
+				<li><center><img src="img/a.png" alt="User Avatar" class="img-circle"><br>
+				<font color="#30a5ff">Dr.Ravi Sharma</font></center>
+				</li>
+				<li role="presentation" class="divider"></li>
+				<li><a href="dashboard.html"><svg class="glyph stroked desktop"><use xlink:href="#stroked-desktop"/></svg>Dashboard</a></li>
+				<li class="active"><a href=""> <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg>Appointments</a></li>
+				<li><a href="record.html"> <svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Patient Records </a></li>
+				<li><a href="myslot.html"> <svg class="glyph stroked clock"><use xlink:href="#stroked-clock"/></svg>My Slot</a></li>
+				<li><a href="account.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg>My Account</a></li>
+				<li><a href="login.html"><svg class="glyph stroked download"><use xlink:href="#stroked-download"/></svg>Log Out</a></li>
+				<li role="presentation" class="divider"></li>
+				
+		</ul>
+
+</div><!--/.sidebar-->
+
+		
+<!-- Main content -->		
+
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-3 main">			
+		
+	
+		<div class="col-md-9">
+			<div class="panel panel-default">
+				<div class="panel-body tabs" >
+					
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#pilltab1" data-toggle="tab">Upcoming Appointments</a></li>
+							<li><a href="#pilltab2" data-toggle="tab">Completed Appointments</a></li>	
+						</ul>
+		
+		<div class="tab-content" >
+						
+			<div class="tab-pane fade in active" id="pilltab1">
+							
+							<div class="row">
+								<div class="col-lg-3">
+								<input class="form-control" type="text" placeholder="search here.." style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<input class="form-control" type="date" value="2011-08-19" style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<input class="form-control" type="date" value="2011-08-19" style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<button class="btn btn-primary" style="margin-top:10px">search</button>
+								</div>
+							</div>
+							
+							
+								<hr>
+								
+								<!-- tab content -->
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i> 
+									<a href="show_details.html">API2016SAM001 </a></div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+						<hr>
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i> 
+									<a href="show_details.html">
+									 API2016SAM001 </a></div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									<a href="Start_appointment.html">
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </a>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+						<hr>
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									 
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+						<hr>
+								
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+						<hr>
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+						<hr>
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									 
+									 <button class="btn btn-primary">Start Appointment</button>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->								
+								
+			</div>
+			<div class="tab-pane fade" id="pilltab2">
+			
+							<div class="row">
+								<div class="col-lg-3">
+								<input class="form-control" type="text" placeholder="search here.." style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<input class="form-control" type="date" value="2011-08-19" style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<input class="form-control" type="date" value="2011-08-19" style="margin-top:10px">
+								</div>
+								<div class="col-lg-3">
+								<button class="btn btn-primary" style="margin-top:10px">search</button>
+								</div>
+							</div>
+						<hr>
+						<!-- tab content -->
+						<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									  <a href="show_details1.html">
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 </a>
+									 </div>
+									 </div>	<!-- end of col -->
+						</div> <!-- end of row -->
+								<hr>
+								<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 </div>
+									
+									 </div>	<!-- end of col -->
+								</div> <!-- end of row -->
+								<hr>
+								<div class="row	appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									 
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 </div>
+									 </div>	<!-- end of col -->
+								</div> <!-- end of row -->
+								<hr>
+								<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 </div>
+									 </div>	<!-- end of col -->
+								</div> <!-- end of row -->
+								<hr>
+								<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+							
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 </div>
+									 </div>	<!-- end of col -->
+								</div> <!-- end of row -->
+								<hr>
+								<div class="row appointment-css1">
+									 <div class="col-lg-12">
+									 <div class="col-lg-2" style="margin-top:20px">
+									 <img src="img/a.png" width="100%" height="100%"></img>
+									 </div>
+									 <div class="col-lg-7" style="margin-top:20px">
+									 <div style="font-weight:bold;color:#009cff"><i class="fa fa-slack" style="margin-right:20px;color:#009cff"></i>  API2016SAM001 </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-user" style="margin-right:20px;color:#009cff"></></i>  SAMBEET KUMAR SAHU </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-calendar-o" style="margin-right:20px;color:#009cff"></></i>  12-10-2016 &nbsp;&nbsp; ( 06 : 30 PM ) </div>
+									 <div style="font-weight:bold;color:gray"><i class="fa fa-phone-square" style="margin-right:21px;color:#009cff"></></i> +91 8892227292 </div>
+									 <div style="font-weight:bold;color:gray;text-overflow:ellipsis"><i class="fa fa-hand-o-right" style="margin-right:20px;color:#009cff"></></i> Lorem ipsum dolor sit amet, Aenean commodo ligula </div>
+									 </div>
+									 <div class="col-lg-3" style="margin-top:20px">
+									 
+									 <button class="btn btn-primary" style="width:150px">Show Details</button>
+									 
+									 </div>
+									 </div>	<!-- end of col -->
+								</div> <!-- end of row -->	
+
+							</div>
+							
+						</div>
+					</div>
+				</div><!--/.panel-->
+			</div><!-- /.col-->
+
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+	<div id="updatepwd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title" style="text-align:center;color:#009cff">Update Password</h4>
+					  </div>
+					  <div class="modal-body">
+					
+					
+						<div class="form-group">
+								
+								<input type="text"  class="form-control" placeholder="old password">
+								</div>
+					
+						<div class="form-group">
+									
+									<input type="text"  class="form-control" placeholder="New Password">
+									</div>
+									
+						<div class="form-group">
+									
+									<input type="text"  class="form-control" placeholder="Confirm password">
+									</div>
+					
+					
+					
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+
+
+
+
+
+</html>

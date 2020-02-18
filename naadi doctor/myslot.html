@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+			<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>My Slots</title>
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			<link href="css/datepicker3.css" rel="stylesheet">
+			<link href="css/styles.css" rel="stylesheet">
+			<!--Icons-->
+			<script src="js/lumino.glyphs.js"></script>
+			<script src="chart/jquery-2.1.4.min.js"></script>	
+			<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+			<![endif]-->
+			<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+			<!-- css for the card view-->
+			</head>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><font face="Comic Sans MS">naadi</font></a>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+		
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+				<br>
+				<li><center><img src="img/a.png" alt="User Avatar" class="img-circle"><br>
+				<font color="#30a5ff">Dr.Ravi Sharma</font></center>
+				</li>
+				<li role="presentation" class="divider"></li>
+				<li><a href="dashboard.html"><svg class="glyph stroked desktop"><use xlink:href="#stroked-desktop"/></svg>Dashboard</a></li>
+				<li><a href="appointments.html"> <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg>Appointments</a></li>
+				<li><a href="record.html"> <svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Patient Records </a></li>
+				<li class="active"><a href="myslot.html"> <svg class="glyph stroked clock"><use xlink:href="#stroked-clock"/></svg>My Slot</a></li>
+				<li><a href="account.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg>My Account</a></li>
+				<li><a href="login.html"><svg class="glyph stroked download"><use xlink:href="#stroked-download"/></svg>Log Out</a></li>
+				<li role="presentation" class="divider"></li>
+				
+		</ul>
+
+	</div><!--/.sidebar-->
+
+<!-- Main content -->
+	
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-3 main">			
+
+		<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-body tabs" >
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#pilltab1" data-toggle="tab">Calendar</a></li>
+							<li><a href="#pilltab2" data-toggle="tab">Manage Slot</a></li>
+							
+						</ul>
+		
+						<div class="tab-content" >
+							<div class="tab-pane fade in active" id="pilltab1">
+								<div class="row">
+								<div style="padding-left:20px;padding-right:20px">
+								<div class="form-group row">
+								<div class="col-md-6" style="margin-top:10px">  
+								<input class="form-control" type="date" >
+								</div>
+									 
+								<div class="col-md-6" style="margin-top:10px">  
+								<button class="btn btn-primary"  data-toggle="modal" data-target="#unavailable"> Unavailability </button>
+								</div>
+								
+								</div>
+								</div>
+								</div>
+								<hr>
+								<!-- tab content -->
+								<div class="container-fluid">
+								<div class="row">
+								
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-cloud">&nbsp;&nbsp <font face="Comic Sans MS">Morning Slot</font></i></span>
+								</div>
+								<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										09:30 am - 10 :30 am
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										09:30 am - 10 :30 am
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										09:30 am - 10 :30 am
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										10:30 am - 11 :30 am
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								</div>
+								</div>
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-sun-o">&nbsp;&nbsp <font face="Comic Sans MS">Afternoon Slot</font></i></span>
+								</div>
+								<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										12:00 pm - 13:00 pm
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										13:00 pm - 14 :00 pm
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										14:00 pm - 15 :00 pm
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										15:00 pm - 16 :00 pm
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										16:00 pm - 17 :00 pm
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								
+								</div> <!-- panel body end -->
+								</div> <!-- panel default end -->
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-moon-o">&nbsp;&nbsp <font face="Comic Sans MS">Evening Slot</font></i></span>
+								</div>
+								<div class="panel-body"><div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										18:30 am - 19 :30 am
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										19:30 am - 20 :30 am
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										20:30 am - 21 :30 am
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								
+								</div>
+								</div>
+								
+								
+								
+								</div> <!-- end of row -->
+								</div> <!-- end of container -->
+								
+							</div>
+							<div class="tab-pane fade" id="pilltab2">
+							<div class="row">
+								<div style="padding-left:20px;padding-right:20px">
+								<div class="form-group row">
+								<div class="col-md-6" style="margin-top:10px">  
+								<div class="form-group">
+									
+									<select class="form-control">
+									<option>Monday</option>
+									<option>Tuesday</option>
+									<option>Wednessday</option>
+									<option>Thursday</option>
+									<option>Friday</option>
+									<option>Saturday</option>
+									<option>sunday</option>
+									
+									</select>
+									</div>
+								</div>
+								<div class="col-md-6" style="margin-top:10px">  
+								<button class="btn btn-primary"  data-toggle="modal" data-target="#addslot"> Add slot </button>
+								</div>	 
+								
+								
+								</div>
+								</div>
+								</div>
+								<hr>
+								
+								<!-- tab content -->
+								<!-- tab content -->
+								<div class="container-fluid">
+								<div class="row">
+								
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-cloud">&nbsp;&nbsp <font face="Comic Sans MS">Morning Slot</font></i></span>
+								</div>
+								<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										09:30 am - 10 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										09:30 am - 10 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										09:30 am - 10 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										10:30 am - 11 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								</div>
+								</div>
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-sun-o">&nbsp;&nbsp <font face="Comic Sans MS">Afternoon Slot</font></i></span>
+								</div>
+								<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										12:00 pm - 13:00 pm
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										13:00 pm - 14 :00 pm
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										14:00 pm - 15 :00 pm
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										15:00 pm - 16 :00 pm
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										16:00 pm - 17 :00 pm
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								
+								</div> <!-- panel body end -->
+								</div> <!-- panel default end -->
+								<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#009cff;color:#fffff">
+								<span style="color:#ffffff"><i class="fa fa-moon-o">&nbsp;&nbsp <font face="Comic Sans MS">Evening Slot</font></i></span>
+								</div>
+								<div class="panel-body"><div class="row">
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										18:30 am - 19 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-primary">
+										19:30 am - 20 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+									<div class="col-lg-4">
+										<div class="alert bg-success">
+										20:30 am - 21 :30 am
+										<a href="#" class="pull-right">
+										<span class="glyphicon glyphicon-remove"></span>
+										</a>
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								
+								</div>
+								</div>
+								</div> <!-- end of row -->
+								</diV> <!-- end of container -->
+								
+
+							</div> <!-- tab end -->
+							
+						</div>
+					</div>
+				</div><!--/.panel-->
+			</div><!-- /.col-->
+
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+
+	<div id="addslot" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header" style="background-color:#009cff">
+						<button type="button" class="close" data-dismiss="modal" style="color:#000000">&times;</button>
+						<h4 class="modal-title" style="text-align:center;color:#ffffff"><font face="Comic Sans MS"> Please Provide A Suitable Time Slot</font></h4>
+					  </div>
+					  <div class="modal-body">
+									<br><br>
+									<div class="container-fluid" style="padding-left:70px;padding-right:70px">
+									<center>
+									<div class="col-lg-5">
+									<input class="form-control" type="time" value="13:45:00" >
+									</div>
+									<div class="col-lg-2">
+									<i class="fa fa-arrows-h fa-2x" style="color:#009cff;align:center"></i>
+									</div>
+									<div class="col-lg-5">
+									<input class="form-control" type="time" value="13:45:00" >
+									</div>
+									</center>
+									
+									</diV>
+					
+					<br><br>
+					  </div>
+					  <div class="modal-footer" style="background-color:#ffffff">
+					  <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+					  </div>
+					  
+					</div>
+
+				  </div>	<!-- modal dialoge end -->
+				</div>	<!-- modal div end -->
+
+
+
+<div id="unavailable" class="modal fade" tabindex="-1" role="dialog"  aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header" style="background-color:#009cff">
+						<button type="button" class="close" data-dismiss="modal" style="color:#000000">&times;</button>
+						<h4 class="modal-title" style="text-align:center;color:#ffffff"><font face="Comic Sans MS">Dr. Ravi Sharma</font></h4>
+					  </div>
+					  <div class="modal-body">
+									<br><br>
+									
+									<div class="container-fluid">
+									
+									<div class="col-md-6">
+									<input class="form-control" type="date" style="width:200px;float:left;margin-top:10px;margin-bottom:10px">
+									</div>
+									
+									<div class="col-md-6">
+									<input class="form-control" type="date"  style="width:200px;float:right;margin-top:10px;margin-bottom:10px">
+									</div>
+									
+									<div class="col-lg-12">
+									<textarea class="form-control" placeholder="Give a reason Unavilable" rows="3"></textarea>
+									</div>
+									
+									<div class="col-lg-12">
+									<button class="btn btn-primary" style="margin-top:20px;float:right">ADD</button>
+									</div>
+									</diV>
+									<hr>
+									
+						<div class="table-resposive">
+							<table class="table table-bordered table-striped" style="text-align:center">
+									<thead>
+									<tr>
+										<th>Date</th>
+										<th>Reason</th>
+										<th></th>
+									<tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>13-10-2016 to 14-10-2016</td>
+										<td>I am going Out of town for one day for business purpose</td>
+										<td><button class="btn btn-primary">show appointments</button>&nbsp;<button class="btn btn-danger" style="margin-top:3px"><span class="glyphicon glyphicon-trash"></span></button></td>
+									</tr>
+									<tr>
+										<td>13-10-2016 to 14-10-2016</td>
+										<td>I am going Out of town for one day for business purpose</td>
+										<td><button class="btn btn-primary">show appointments</button>&nbsp;<button class="btn btn-danger" style="margin-top:3px"><span class="glyphicon glyphicon-trash"></span></button></td>
+									</tr>
+									<tr>
+										<td>13-10-2016 to 14-10-2016</td>
+										<td>I am going Out of town for one day for business purpose</td>
+										<td><button class="btn btn-primary">show appointments</button>&nbsp;<button class="btn btn-danger" style="margin-top:3px"><span class="glyphicon glyphicon-trash"></span></button></td>
+									</tr>
+									</tbody>
+							</table>
+								
+						</div><!--  div end for table responsive -->
+						
+					
+					<br><br>
+					  </div>
+					  <div class="modal-footer" style="background-color:#ffffff">
+					  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					  </div>
+					  
+					</div>
+
+				  </div>	<!-- modal dialoge end -->
+				</div>	<!-- modal div end -->
+
+
+	
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Naadi Log In page </title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+							<script>
+							$(document).ready(function(){
+								$("#reg").click(function(){
+									
+									$("#form1").fadeOut(600);
+									$("#form2").fadeIn(700);
+								});
+							});
+							</script>
+							<script>
+							$(document).ready(function(){
+								$("#canc").click(function(){
+									
+									$("#form2").fadeOut(600);
+									$("#form1").fadeIn(700);
+								});
+							});
+							</script>
+</head>
+
+<body>
+
+	
+	<br>
+	
+	
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+            <div class="col-lg-12 col-md-12 col-sm-12" id="form1">
+			<div class="panel panel-default login-css1">
+                
+				<div class="panel-heading" style="border-top-left-radius:20px;border-top-right-radius:20px;height:auto;background:#009cff">
+                    
+                <img src="img/pic.png" height="auto" width="100%">
+                
+                </div>
+                
+				<div class="panel-body">
+				
+				<br>
+				
+				 <div class="container-fluid">
+					<form role="form" >
+						<fieldset>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+								<a style="float:right;margin-top:5px"> forgot password ? </a>
+								
+							</div>
+							<br>
+							<center>
+							
+							<div class="btn-group" role="group">
+							  
+							  <button type="button" class="btn btn-primary" style="border-top-left-radius:20px;border-bottom-left-radius:20px;padding-left:22px;padding-right:22px" onclick="window.open('dashboard.html','_self')">Login</button>
+							  <script>
+							  
+							  </script>
+
+							  <button type="button" id="reg" class="btn btn-success" style="border-top-right-radius:20px;border-bottom-right-radius:20px">Register</button>
+
+							</div>
+							</center>
+							
+							
+							
+							
+							
+							
+						</fieldset>
+					</form>
+                    <br>
+				 </div>
+				</div>
+			</div>
+		</div><!-- /.col-->
+		
+		
+		
+		
+		            <div class="col-lg-12 col-md-12 col-sm-12" id="form2" style="display:none">
+			<div class="panel panel-default login-css1">
+                
+				<div class="panel-heading" style="border-top-left-radius:20px;border-top-right-radius:20px;height:auto;background:#009cff">
+                    
+                <img src="img/pic.png" height="auto" width="100%">
+                
+                </div>
+                
+				<div class="panel-body">
+				
+				<br>
+				
+				 <div class="container-fluid">
+					<form role="form" >
+						<fieldset>
+							<div class="col-lg-6">
+									<div class="form-group">
+										<input class="form-control" placeholder="Patient Name" name="Patient Name" type="text" autofocus>
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group">
+										<input class="form-control" placeholder="Email" name="Email" type="email" value="">
+									</div>
+							</div>
+							<div class="col-lg-2">
+									<div class="form-group">
+										<input class="form-control" placeholder="+91" name="number" type="text" value="">
+									</div>
+							</div>
+							<div class="col-lg-4">
+									<div class="form-group">
+										<input class="form-control" placeholder="Mobile Number" name="phone" type="tel" value="">
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group">
+										<input class="form-control" placeholder="dd/mm/yy" name="date" type="date" value="">
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group">
+										<input class="form-control" placeholder="Password" name="password" type="password" value="">
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group">
+										<input class="form-control" placeholder="Confirm Password" name="confirm_password" type="password" value="">
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group">
+									<select class="form-control" placeholder="Blood group">
+									<option>AB+</option>
+									<option>AB-</option>
+									<option>B+</option>
+									<option>B-</option>
+									<option>A+</option>
+									<option>A-</option>
+									<option>0+</option>
+									<option>0-</option>
+									</select>
+									</div>
+							</div>
+							<div class="col-lg-6">
+									<div class="form-group" style="margin-top:5px">
+									<label class="radio-inline" style="font-size:16px;color:#009cff"><input type="radio" name="optradio">Male</label>
+									
+									<label class="radio-inline" style="font-size:16px;color:#009cff"><input type="radio" name="optradio">Female</label>
+									</div>
+							</div>
+							
+							<div class="col-lg-12">
+									<div class="form-group">
+									<textarea class="form-control" placeholder="Provide your full address" rows="2" id="address"></textarea>
+									</div>
+							</div>
+							<div class="col-lg-4">
+									<div class="form-group">
+									<input class="form-control" placeholder="country" name="address" type="text">
+									</div>
+							</div>
+							<div class="col-lg-4">
+									<div class="form-group">
+									<input class="form-control" placeholder="state" name="address" type="text">
+									</div>
+							</div>
+							<div class="col-lg-4">
+									<div class="form-group">
+									<input class="form-control" placeholder="zip code" name="address" type="text">
+									</div>
+							</div>
+							
+							<center>
+							<div class="col-lg-12">
+							<div class="btn-group" role="group">
+							  
+							  <button type="button" class="btn btn-primary" style="border-top-left-radius:20px;border-bottom-left-radius:20px;padding-left:17px" onclick="window.open('dashboard.html','_self')">Submit</button>
+						
+
+							  <button type="button" id="canc" class="btn btn-success" style="border-top-right-radius:20px;border-bottom-right-radius:20px;padding-left:10px;padding-right:20px"> Cancel </button>
+
+							</div>
+							</center>
+							</div>
+							
+							
+							
+							
+							
+						</fieldset>
+					</form>
+                    <br>
+				 </div>
+				</div>
+			</div>
+		</div><!-- /.col-->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        
+       </div> 
+
+	
+		
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+
+
+
+
+	
+</body>
+</html>
